@@ -1,0 +1,17 @@
+{
+  "name": "Westfield Marketplace",
+  "short_name": "Westfield",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#6c4df6",
+  "description": "Westfield Marketplace - cars, wigs & hair, phones, fashion, electronics and more.",
+  "icons": [
+    {
+      "src": "image/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
