@@ -907,6 +907,37 @@ const products = [
   },
 ];
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Westfield Marketplace Products",
+  url: "https://westfield-marketplace.netlify.app/",
+  numberOfItems: products.length,
+  itemListElement: products.map((product, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    item: {
+      "@type": "Product",
+      name: product.name,
+      description: product.desc,
+      image: `https://westfield-marketplace.netlify.app/${product.image}`,
+      category: product.category,
+      offers: {
+        "@type": "Offer",
+        price: product.price,
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+        url: "https://westfield-marketplace.netlify.app/",
+      },
+    },
+  })),
+};
+
+const productSchemaScript = document.createElement("script");
+productSchemaScript.type = "application/ld+json";
+productSchemaScript.textContent = JSON.stringify(productSchema);
+document.head.appendChild(productSchemaScript);
+
 const productReviews = {
   1: [
     {
