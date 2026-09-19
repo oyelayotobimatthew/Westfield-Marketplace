@@ -3363,3 +3363,24 @@ body.no-scroll {
   max-width: 100%;
   margin: 10px auto 18px;
 }
+
+.price-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.pay-small-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #e8f7ee;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}

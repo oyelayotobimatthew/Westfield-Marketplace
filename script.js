@@ -37,7 +37,7 @@ const products = [
     id: 3,
     category: "Cars",
     name: "2024 Mercedes-AMG GLE 53 Coupé",
-    price: 8000,
+    price: 60000,
     image: "image/2024 Mercedes-AMG GLE 53 Coupé.jpg",
     desc: "The 2024 Mercedes-AMG GLE 53 Coupe is a high-performance luxury sport utility vehicle featuring a sloping roofline, a 429-horsepower turbocharged inline-six engine, and updated front and rear styling.",
     gallery: [
@@ -145,7 +145,7 @@ const products = [
     id: 10,
     category: "Cars",
     name: "Corolla XEi 2025",
-    price: 150000,
+    price: 20000,
     image: "image/Corolla XEi 2025.jpg",
     desc: "Strong and practical pickup truck for work and everyday use.",
     gallery: [
@@ -325,7 +325,7 @@ const products = [
     id: 22,
     category: "Phones",
     name: "iPhone 16 Pro Unlocked, 128GB",
-    price: 800,
+    price: 770,
     image: "image/iPhone 16 Pro Unlocked, 128GB.jpg",
     desc: "Reliable everyday smartphone with a bright display.",
     gallery: [
@@ -355,7 +355,7 @@ const products = [
     id: 24,
     category: "Phones",
     name: "Iphone 17, 256GB",
-    price: 1000,
+    price: 930,
     image: "image/Iphone 17, 256GB.jpg",
     desc: "Affordable smartphone for everyday communication and entertainment.",
     gallery: [
@@ -415,7 +415,7 @@ const products = [
     id: 28,
     category: "Phones",
     name: "Xiaomi Redmi 14C Smartphone",
-    price: 1299,
+    price: 90,
     image: "image/Xiaomi Redmi 14C Smartphone.jpg",
     desc: "Innovative smartphone with modern features and a flexible display.",
     gallery: [
@@ -624,7 +624,7 @@ const products = [
   {
     id: 42,
     category: "Electronics",
-    name: "Smart 4K Television",
+    name: "Smart 4K 43inches Television",
     price: 200,
     image: "image/smart-tv.jpg",
     desc: "Large-screen entertainment for your home.",
@@ -700,7 +700,7 @@ const products = [
     id: 47,
     category: "Electronics",
     name: "Wireless Keyboard",
-    price: 15,
+    price: 25,
     image: "image/wireless-keyboard.jpg",
     desc: "Convenient wireless keyboard for your computer setup.",
     gallery: [
@@ -730,7 +730,7 @@ const products = [
     id: 49,
     category: "Electronics",
     name: "ZOSTUIC 8K 88MP Digital Camera",
-    price: 67,
+    price: 110,
     image: "image/ZOSTUIC 8K 88MP Digital Camera.jpg",
     desc: "Digital camera for photography and creative projects.",
     gallery: [
@@ -2170,9 +2170,16 @@ function productCard(product) {
 
         <div class="product-bottom">
 
-          <strong>
-             ${money(product.price)}
-          </strong>
+         <div class="product-bottom">
+  <div class="price-area">
+    <strong>
+      ${money(product.price)}
+    </strong>
+
+    <span class="pay-small-badge">
+      💳 Pay Small Small
+    </span>
+  </div>
 
           <div class="product-actions">
 
@@ -2331,11 +2338,12 @@ function openProductDetails(id) {
 
         <div class="product-main-image">
 
-          <img
-            id="productMainImage"
-            src="${gallery[0]}"
-            alt="${product.name}"
-          >
+         <img
+  id="productMainImage"
+  src="${gallery[0]}"
+  alt="${product.name}"
+  decoding="async"
+>
 
         </div>
 
@@ -2351,14 +2359,15 @@ function openProductDetails(id) {
                   data-gallery-image="${image}"
                   aria-label="View ${product.name} image ${index + 1}"
                 >
-
-                  <img
-                    src="${image}"
-                    alt="${product.name} view ${index + 1}"
-                    onerror="
-                      this.closest('.product-thumbnail').style.display='none';
-                    "
-                  >
+<img
+  src="${image}"
+  alt="${product.name} view ${index + 1}"
+  loading="lazy"
+  decoding="async"
+  onerror="
+    this.closest('.product-thumbnail').style.display='none';
+  "
+>
 
                 </button>
               `,
