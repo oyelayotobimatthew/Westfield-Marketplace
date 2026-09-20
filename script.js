@@ -384,8 +384,8 @@ const products = [
   {
     id: 26,
     category: "Phones",
-    name: "iPhone 18 pro max dark cherry",
-    price: 200,
+    name: "iPhone 18 pro max dark cherry 256GB",
+    price: 1000,
     image: "image/iPhone 18 pro max dark cherry.jpg",
     desc: "iPhone 18 pro max featuring an advanced camera system.",
     gallery: [
