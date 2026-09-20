@@ -384,15 +384,15 @@ const products = [
   {
     id: 26,
     category: "Phones",
-    name: "Samsung Galaxy A17",
+    name: "iPhone 18 pro max dark cherry",
     price: 200,
-    image: "image/samsung galaxy a17.jpg",
-    desc: "Smartphone featuring an advanced camera system.",
+    image: "image/iPhone 18 pro max dark cherry.jpg",
+    desc: "iPhone 18 pro max featuring an advanced camera system.",
     gallery: [
-      "image/samsung galaxy a17.jpg",
-      "image/samsung galaxy a17-back.jpg",
-      "image/samsung galaxy a17-side.jpg",
-      "image/samsung galaxy a17-detail.jpg",
+      "image/iPhone 18 pro max dark cherry.jpg",
+      "image/iPhone 18 pro max dark cherry-back.jpg",
+      "image/iPhone 18 pro max dark cherry-side.jpg",
+      "image/iPhone 18 pro max dark cherry-detail.jpg",
     ],
   },
 
@@ -714,15 +714,15 @@ const products = [
   {
     id: 48,
     category: "Electronics",
-    name: "HGFRTEE 15.6 Inch Portable Monitor",
-    price: 50,
-    image: "image/HGFRTEE 15.6 Inch Portable Monitor.jpg",
+    name: "Cooling Station for Ps5/Slim",
+    price: 15,
+    image: "image/Cooling Station for Ps5-Slim.jpg",
     desc: "High-quality display suitable for work and entertainment.",
     gallery: [
-      "image/HGFRTEE 15.6 Inch Portable Monitor.jpg",
-      "image/HGFRTEE 15.6 Inch Portable Monitor-side.jpg",
-      "image/HGFRTEE 15.6 Inch Portable Monitor-back.jpg",
-      "image/HGFRTEE 15.6 Inch Portable Monitor-detail.jpg",
+      "image/Cooling Station for Ps5-Slim.jpg",
+      "image/Cooling Station for Ps5-Slim-side.jpg",
+      "image/Cooling Station for Ps5-Slim-back.jpg",
+      "image/Cooling Station for Ps5-Slim-detail.jpg",
     ],
   },
 
@@ -1457,7 +1457,7 @@ const productReviews = {
       name: "Samuel",
       rating: 5,
       comment:
-        "The Galaxy A17 has a clean design and the large display looks really nice.",
+        "iPhone 18 pro max dark cherry has a clean design and the large display looks really nice.",
     },
     {
       name: "Zoe",
@@ -1894,7 +1894,7 @@ const productReviews = {
       name: "Daniel",
       rating: 5,
       comment:
-        "The monitor has a clean modern design and the large display looks excellent.",
+        "The Ps5-Slim has a clean modern design and the Appearance looks excellent.",
     },
     {
       name: "Lauren",
@@ -1906,7 +1906,7 @@ const productReviews = {
       name: "Matthew",
       rating: 4,
       comment:
-        "A nice monitor with a clean design that would fit well on a work desk.",
+        "A nice Ps5-Slim with a clean design that would fit well for your TV.",
     },
   ],
 
