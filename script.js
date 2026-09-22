@@ -2177,13 +2177,28 @@ function productCard(product) {
     <article class="product-card">
 
       <div class="product-image">
-        <img
-          src="${product.image}"
-          alt="${product.name}"
-          loading="lazy"
-          onerror="this.style.display='none';"
-        >
-      </div>
+
+  <span class="verified-badge">
+    ✓ Verified
+  </span>
+
+  <button
+    type="button"
+    class="favorite-btn"
+    aria-label="Add to favourites"
+  >
+    ♡
+  </button>
+
+  <img
+    src="${product.image}"
+    alt="${product.name}"
+    loading="lazy"
+    decoding="async"
+    onerror="this.style.display='none';"
+  >
+
+</div>
 
       <div class="product-info">
 
@@ -3050,7 +3065,7 @@ delivery details and payment instructions.
 
 Thank you.`;
 
-    const whatsappURL = `https://wa.me/16573181208?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/08069256823?text=${encodeURIComponent(
       message,
     )}`;
 
@@ -3083,3 +3098,23 @@ if ("serviceWorker" in navigator) {
     });
   });
 }
+
+document.addEventListener("click", function (event) {
+  const favoriteButton = event.target.closest(".favorite-btn");
+
+  if (!favoriteButton) return;
+
+  event.stopPropagation();
+
+  favoriteButton.classList.toggle("active");
+
+  if (favoriteButton.classList.contains("active")) {
+    favoriteButton.textContent = "♥";
+
+    favoriteButton.setAttribute("aria-label", "Remove from favourites");
+  } else {
+    favoriteButton.textContent = "♡";
+
+    favoriteButton.setAttribute("aria-label", "Add to favourites");
+  }
+});
