@@ -3065,7 +3065,7 @@ delivery details and payment instructions.
 
 Thank you.`;
 
-    const whatsappURL = `https://wa.me/08069256823?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/16573181208?text=${encodeURIComponent(
       message,
     )}`;
 
@@ -3117,4 +3117,36 @@ document.addEventListener("click", function (event) {
 
     favoriteButton.setAttribute("aria-label", "Add to favourites");
   }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.getElementById("wf-wa-button");
+  const box = document.getElementById("westfield-whatsapp-box");
+  const close = document.getElementById("wf-wa-close");
+
+  // Make sure all WhatsApp elements exist
+  if (!button || !box || !close) {
+    console.log("Westfield WhatsApp widget elements not found.");
+    return;
+  }
+
+  button.onclick = function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    box.classList.add("wf-show");
+  };
+
+  close.onclick = function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    box.classList.remove("wf-show");
+  };
+
+  document.addEventListener("click", function (event) {
+    if (!box.contains(event.target) && !button.contains(event.target)) {
+      box.classList.remove("wf-show");
+    }
+  });
 });

@@ -3469,3 +3469,418 @@ body.no-scroll {
 .favorite-btn.active {
   color: #e53935;
 }
+/* =====================================================
+   WESTFIELD MARKETPLACE CUSTOMER COMPLAINTS WHATSAPP
+   ===================================================== */
+
+#westfield-whatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 2147483647;
+  font-family: Arial, sans-serif;
+}
+
+#wf-wa-button {
+  width: 62px;
+  height: 62px;
+  border: 0;
+  border-radius: 50%;
+  background: #25d366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+#wf-wa-button svg {
+  width: 36px;
+  height: 36px;
+}
+
+#westfield-whatsapp-box {
+  position: absolute;
+  right: 0;
+  bottom: 78px;
+  width: 350px;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  display: none;
+}
+
+#westfield-whatsapp-box.wf-show {
+  display: block;
+}
+
+.wf-wa-top {
+  background: #25d366;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wf-wa-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wf-wa-icon-small {
+  width: 42px;
+  height: 42px;
+  background: white;
+  color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wf-wa-icon-small svg {
+  width: 28px;
+  height: 28px;
+}
+
+.wf-wa-title strong {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.wf-wa-title span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.95;
+}
+
+#wf-wa-close {
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  line-height: 25px;
+}
+
+.wf-wa-content {
+  padding: 22px;
+}
+
+.wf-wa-content p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.wf-wa-content .wf-wa-sub {
+  color: #666;
+}
+
+.wf-wa-contact {
+  margin-top: 20px;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  background: #f3fff7;
+  border: 1px solid #d5f2df;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.wf-wa-contact-icon {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #25d366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wf-wa-contact-icon svg {
+  width: 27px;
+  height: 27px;
+}
+
+.wf-wa-contact-text {
+  flex: 1;
+}
+
+.wf-wa-contact-text strong {
+  display: block;
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 3px;
+}
+
+.wf-wa-contact-text span {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.wf-wa-arrow {
+  font-size: 27px;
+  color: #25d366;
+}
+
+@media (max-width: 600px) {
+  #westfield-whatsapp {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  #wf-wa-button {
+    width: 58px;
+    height: 58px;
+  }
+
+  #wf-wa-button svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  #westfield-whatsapp-box {
+    width: calc(100vw - 30px);
+    max-width: 350px;
+  }
+}
+
+#westfield-whatsapp {
+  pointer-events: none !important;
+  z-index: 2147483647 !important;
+}
+
+#wf-wa-button,
+#westfield-whatsapp-box,
+#wf-wa-close,
+.wf-wa-contact {
+  pointer-events: auto !important;
+}
+
+#wf-wa-button {
+  position: relative;
+  z-index: 2147483648 !important;
+  cursor: pointer !important;
+  touch-action: manipulation;
+}
+
+#westfield-whatsapp-box {
+  z-index: 2147483648 !important;
+}
+
+#wf-wa-close,
+.wf-wa-contact {
+  cursor: pointer !important;
+  touch-action: manipulation;
+}
+
+.complaint-notice {
+  width: 100%;
+  padding: 25px 20px;
+  box-sizing: border-box;
+}
+
+.complaint-notice-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 22px 25px;
+  background: #f7fdf9;
+  border: 1px solid #d8f1e1;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.complaint-icon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+
+  border-radius: 50%;
+  background: #25d366;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+}
+
+.complaint-text {
+  flex: 1;
+}
+
+.complaint-text h3 {
+  margin: 0 0 6px;
+  font-size: 19px;
+  color: #222;
+}
+
+.complaint-text p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.complaint-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 20px;
+
+  background: #25d366;
+  color: #fff;
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+
+  border-radius: 8px;
+
+  white-space: nowrap;
+
+  transition: 0.25s ease;
+}
+
+.complaint-button:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+.contact-complaint-box {
+  margin: 25px 0;
+  padding: 22px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+
+  background: #f7fdf9;
+  border: 1px solid #d8f1e1;
+  border-radius: 14px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-complaint-icon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+
+  border-radius: 50%;
+  background: #25d366;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+}
+
+.contact-complaint-content {
+  flex: 1;
+}
+
+.contact-complaint-content h3 {
+  margin: 0 0 8px;
+  color: #222;
+  font-size: 18px;
+}
+
+.contact-complaint-content p {
+  margin: 0 0 15px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.complaint-contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 11px 17px;
+
+  background: #25d366;
+  color: #fff;
+
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+
+  border-radius: 8px;
+
+  transition: 0.25s ease;
+}
+
+.complaint-contact-button:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .complaint-notice {
+    padding: 18px 12px;
+  }
+
+  .complaint-notice-content {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .complaint-text h3 {
+    font-size: 17px;
+  }
+
+  .complaint-text p {
+    font-size: 13px;
+  }
+
+  .complaint-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-complaint-box {
+    padding: 18px;
+    gap: 14px;
+  }
+
+  .contact-complaint-content h3 {
+    font-size: 17px;
+  }
+
+  .contact-complaint-content p {
+    font-size: 13px;
+  }
+
+  .complaint-contact-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
