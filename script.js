@@ -3065,7 +3065,7 @@ delivery details and payment instructions.
 
 Thank you.`;
 
-    const whatsappURL = `https://wa.me/16573181208?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/08069256823?text=${encodeURIComponent(
       message,
     )}`;
 
